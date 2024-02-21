@@ -33,12 +33,7 @@
 }
 
 button {
-  margin-block-start: 1rem;
-  padding: 1rem;
-  margin-inline-end: 4rem;
   background-color: lightcoral;
-  border: none;
-  border-radius: 10px;
   animation: attacare 3s 1s backwards;
 }
 button:hover {
