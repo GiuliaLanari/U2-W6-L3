@@ -1,0 +1,29 @@
+$spazio-valori: (
+  xs: 8px,
+  sm: 16px,
+  md: 24px,
+  lg: 32px,
+  xl: 48px,
+  xxl: 64px,
+);
+
+$direzione: "inline", "block";
+
+@each $axis in $direzione {
+  @each $size, $valore in $spazio-valori {
+    .padding-#{$size} {
+      padding: $valore;
+    }
+    .margin-#{$size} {
+      margin: $valore;
+    }
+
+    .padding-#{$axis}-#{$size} {
+      padding-#{$axis}: $valore;
+    }
+
+    .margin-#{$axis}-#{$size} {
+      margin-#{$axis}: $valore;
+    }
+  }
+}

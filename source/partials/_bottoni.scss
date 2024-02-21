@@ -1,7 +1,16 @@
-@mixin bottoni($padding, $margin_inline, $margin_inline_end, $border) {
+@mixin bottoni() {
   border: none;
+  font-size: $font-size-medium;
   border-radius: 10px;
   margin-block-start: 1rem;
   padding: 1rem;
   margin-inline-end: 4rem;
+  font-family: $myFont;
+  font-weight: bolder;
+  margin-inline: 4rem;
+  margin-block-start: 4rem;
 }
+
+$bottone1: #0e6cff;
+$bottone2: #ff8700;
+$bottone3: #4caf50;

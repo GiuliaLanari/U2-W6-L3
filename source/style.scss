@@ -5,82 +5,78 @@
 @import "./partials/bottoni";
 @import "./partials/animazioni";
 
+body {
+  font-family: $myFont;
+}
+main {
+  margin: 3rem;
+}
 .contenitore-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: $nav;
-  padding-block: 0.5rem;
+  padding-inline: 3rem;
+
   img {
     width: 15%;
-    padding-inline-start: 1rem;
   }
   nav {
     a {
-      padding-inline-end: 1rem;
-      font-size: 30px;
-      text-decoration: none;
+      color: $testo;
+      font-size: $font-size-large;
+      margin-inline: 1rem;
     }
   }
 }
 
 button {
-  background-color: lightcoral;
-
+  @include bottoni;
   animation: attacare 3s 1s backwards;
+
   &:hover {
     transform: translateX(10px);
-    background-color: lightgreen;
   }
 }
 
-main {
-  margin-block-start: 2rem;
-  padding-inline: 1rem;
+button:nth-of-type(1) {
+  background-color: $bottone1;
 }
 
-h1 {
-  margin-block: 1rem;
-  animation: attacare 3s 1s backwards;
+button:nth-of-type(2) {
+  background-color: $bottone2;
+}
+
+button:nth-of-type(3) {
+  background-color: $bottone3;
 }
 
 .section1 {
-  padding: 1rem;
+  @include animazioneTop(30px, 3s, 0.1s);
   display: flex;
   color: $testo;
   background-color: $bg_hero;
+  padding: 1.5rem;
   div {
-    padding: 1rem;
     width: 50%;
   }
+  h1 {
+    font-size: $font-size-extra-lage;
+  }
   div p {
-    animation: attacare 3s 1s backwards;
+    font-size: $font-size-large;
   }
   div img {
     width: 100%;
     object-fit: cover;
-    animation: attacare 3s 1s backwards;
   }
 }
 
 .section2 {
-  margin-block: 2rem;
   display: flex;
   justify-content: space-between;
-  background-color: white;
-}
-
-.section2 img {
-  width: 20%;
-}
-
-@keyframes attacare {
-  from {
-    transform: perspective(500px) translateZ(200px);
-    opacity: 0;
-  }
-
-  to {
-    transform: perspective(500px) translateZ(0px);
+  margin-block-start: 3rem;
+  img {
+    width: 20%;
   }
 }

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Protest+Revolution&display=swap");
 *,
 *:before,
 *:after {
@@ -6,89 +7,305 @@
   padding: 0;
 }
 
-@keyframes attacare {
-  from {
-    transform: perspective(500px) translateZ(200px);
-    opacity: 0;
-  }
-  to {
-    transform: perspective(500px) translateZ(0px);
-  }
+body {
+  margin: 0;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.padding-xs {
+  padding: 8px;
+}
+
+.margin-xs {
+  margin: 8px;
+}
+
+.padding-inline-xs {
+  padding-inline: 8px;
+}
+
+.margin-inline-xs {
+  margin-inline: 8px;
+}
+
+.padding-sm {
+  padding: 16px;
+}
+
+.margin-sm {
+  margin: 16px;
+}
+
+.padding-inline-sm {
+  padding-inline: 16px;
+}
+
+.margin-inline-sm {
+  margin-inline: 16px;
+}
+
+.padding-md {
+  padding: 24px;
+}
+
+.margin-md {
+  margin: 24px;
+}
+
+.padding-inline-md {
+  padding-inline: 24px;
+}
+
+.margin-inline-md {
+  margin-inline: 24px;
+}
+
+.padding-lg {
+  padding: 32px;
+}
+
+.margin-lg {
+  margin: 32px;
+}
+
+.padding-inline-lg {
+  padding-inline: 32px;
+}
+
+.margin-inline-lg {
+  margin-inline: 32px;
+}
+
+.padding-xl {
+  padding: 48px;
+}
+
+.margin-xl {
+  margin: 48px;
+}
+
+.padding-inline-xl {
+  padding-inline: 48px;
+}
+
+.margin-inline-xl {
+  margin-inline: 48px;
+}
+
+.padding-xxl {
+  padding: 64px;
+}
+
+.margin-xxl {
+  margin: 64px;
+}
+
+.padding-inline-xxl {
+  padding-inline: 64px;
+}
+
+.margin-inline-xxl {
+  margin-inline: 64px;
+}
+
+.padding-xs {
+  padding: 8px;
+}
+
+.margin-xs {
+  margin: 8px;
+}
+
+.padding-block-xs {
+  padding-block: 8px;
+}
+
+.margin-block-xs {
+  margin-block: 8px;
+}
+
+.padding-sm {
+  padding: 16px;
+}
+
+.margin-sm {
+  margin: 16px;
+}
+
+.padding-block-sm {
+  padding-block: 16px;
+}
+
+.margin-block-sm {
+  margin-block: 16px;
+}
+
+.padding-md {
+  padding: 24px;
+}
+
+.margin-md {
+  margin: 24px;
+}
+
+.padding-block-md {
+  padding-block: 24px;
+}
+
+.margin-block-md {
+  margin-block: 24px;
+}
+
+.padding-lg {
+  padding: 32px;
+}
+
+.margin-lg {
+  margin: 32px;
+}
+
+.padding-block-lg {
+  padding-block: 32px;
+}
+
+.margin-block-lg {
+  margin-block: 32px;
+}
+
+.padding-xl {
+  padding: 48px;
+}
+
+.margin-xl {
+  margin: 48px;
+}
+
+.padding-block-xl {
+  padding-block: 48px;
+}
+
+.margin-block-xl {
+  margin-block: 48px;
+}
+
+.padding-xxl {
+  padding: 64px;
+}
+
+.margin-xxl {
+  margin: 64px;
+}
+
+.padding-block-xxl {
+  padding-block: 64px;
+}
+
+.margin-block-xxl {
+  margin-block: 64px;
+}
+
+body {
+  font-family: "Lora", serif;
+}
+
+main {
+  margin: 3rem;
+}
+
 .contenitore-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: lightblue;
-  padding-block: 0.5rem;
+  padding-inline: 3rem;
 }
 .contenitore-nav img {
   width: 15%;
-  padding-inline-start: 1rem;
 }
 .contenitore-nav nav a {
-  padding-inline-end: 1rem;
-  font-size: 30px;
-  text-decoration: none;
+  color: #f4f4f4;
+  font-size: 22px;
+  margin-inline: 1rem;
 }
 
 button {
-  background-color: lightcoral;
+  border: none;
+  font-size: 18px;
+  border-radius: 10px;
+  margin-block-start: 1rem;
+  padding: 1rem;
+  margin-inline-end: 4rem;
+  font-family: "Lora", serif;
+  font-weight: bolder;
+  margin-inline: 4rem;
+  margin-block-start: 4rem;
   animation: attacare 3s 1s backwards;
 }
 button:hover {
   transform: translateX(10px);
-  background-color: lightgreen;
 }
 
-main {
-  margin-block-start: 2rem;
-  padding-inline: 1rem;
+button:nth-of-type(1) {
+  background-color: #0e6cff;
 }
 
-h1 {
-  margin-block: 1rem;
-  animation: attacare 3s 1s backwards;
+button:nth-of-type(2) {
+  background-color: #ff8700;
+}
+
+button:nth-of-type(3) {
+  background-color: #4caf50;
 }
 
 .section1 {
-  padding: 1rem;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: attacare 3s 0.1s both;
   display: flex;
   color: #f4f4f4;
   background-color: #640fc5;
+  padding: 1.5rem;
+}
+@keyframes attacare {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .section1 div {
-  padding: 1rem;
   width: 50%;
 }
+.section1 h1 {
+  font-size: 50px;
+}
 .section1 div p {
-  animation: attacare 3s 1s backwards;
+  font-size: 22px;
 }
 .section1 div img {
   width: 100%;
   object-fit: cover;
-  animation: attacare 3s 1s backwards;
 }
 
 .section2 {
-  margin-block: 2rem;
   display: flex;
   justify-content: space-between;
-  background-color: white;
+  margin-block-start: 3rem;
 }
-
 .section2 img {
   width: 20%;
-}
-
-@keyframes attacare {
-  from {
-    transform: perspective(500px) translateZ(200px);
-    opacity: 0;
-  }
-  to {
-    transform: perspective(500px) translateZ(0px);
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

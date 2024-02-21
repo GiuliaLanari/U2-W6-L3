@@ -1,10 +1,11 @@
-@keyframes attacare {
-  from {
-    transform: perspective(500px) translateZ(200px);
-    opacity: 0;
-  }
-
-  to {
-    transform: perspective(500px) translateZ(0px);
+@mixin animazioneTop($distanza: 20px, $durata: 1s, $delay) {
+  opacity: 0;
+  transform: translateY($distanza);
+  animation: attacare $durata $delay both;
+  @keyframes attacare {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
