@@ -1,0 +1,10 @@
+@keyframes attacare {
+  from {
+    transform: perspective(500px) translateZ(200px);
+    opacity: 0;
+  }
+
+  to {
+    transform: perspective(500px) translateZ(0px);
+  }
+}

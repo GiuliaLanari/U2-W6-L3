@@ -1,0 +1,86 @@
+@import "./partials/reset";
+@import "./partials/color";
+@import "./partials/font";
+@import "./partials/spaziature";
+@import "./partials/bottoni";
+@import "./partials/animazioni";
+
+.contenitore-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $nav;
+  padding-block: 0.5rem;
+  img {
+    width: 15%;
+    padding-inline-start: 1rem;
+  }
+  nav {
+    a {
+      padding-inline-end: 1rem;
+      font-size: 30px;
+      text-decoration: none;
+    }
+  }
+}
+
+button {
+  background-color: lightcoral;
+
+  animation: attacare 3s 1s backwards;
+  &:hover {
+    transform: translateX(10px);
+    background-color: lightgreen;
+  }
+}
+
+main {
+  margin-block-start: 2rem;
+  padding-inline: 1rem;
+}
+
+h1 {
+  margin-block: 1rem;
+  animation: attacare 3s 1s backwards;
+}
+
+.section1 {
+  padding: 1rem;
+  display: flex;
+  color: $testo;
+  background-color: $bg_hero;
+  div {
+    padding: 1rem;
+    width: 50%;
+  }
+  div p {
+    animation: attacare 3s 1s backwards;
+  }
+  div img {
+    width: 100%;
+    object-fit: cover;
+    animation: attacare 3s 1s backwards;
+  }
+}
+
+.section2 {
+  margin-block: 2rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.section2 img {
+  width: 20%;
+}
+
+@keyframes attacare {
+  from {
+    transform: perspective(500px) translateZ(200px);
+    opacity: 0;
+  }
+
+  to {
+    transform: perspective(500px) translateZ(0px);
+  }
+}

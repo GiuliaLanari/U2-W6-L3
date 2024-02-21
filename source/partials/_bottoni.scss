@@ -1,0 +1,7 @@
+@mixin bottoni($padding, $margin_inline, $margin_inline_end, $border) {
+  border: none;
+  border-radius: 10px;
+  margin-block-start: 1rem;
+  padding: 1rem;
+  margin-inline-end: 4rem;
+}

@@ -1,0 +1,99 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes attacare {
+  from {
+    transform: perspective(500px) translateZ(200px);
+    opacity: 0;
+  }
+  to {
+    transform: perspective(500px) translateZ(0px);
+  }
+}
+.contenitore-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightblue;
+  padding-block: 0.5rem;
+}
+.contenitore-nav img {
+  width: 15%;
+  padding-inline-start: 1rem;
+}
+.contenitore-nav nav a {
+  padding-inline-end: 1rem;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+button {
+  margin-block-start: 1rem;
+  padding: 1rem;
+  margin-inline-end: 4rem;
+  background-color: lightcoral;
+  border: none;
+  border-radius: 10px;
+  animation: attacare 3s 1s backwards;
+}
+button:hover {
+  transform: translateX(10px);
+  background-color: lightgreen;
+}
+
+main {
+  margin-block-start: 2rem;
+  padding-inline: 1rem;
+}
+
+h1 {
+  margin-block: 1rem;
+  animation: attacare 3s 1s backwards;
+}
+
+.section1 {
+  padding: 1rem;
+  display: flex;
+  color: #f4f4f4;
+  background-color: #640fc5;
+}
+.section1 div {
+  padding: 1rem;
+  width: 50%;
+}
+.section1 div p {
+  animation: attacare 3s 1s backwards;
+}
+.section1 div img {
+  width: 100%;
+  object-fit: cover;
+  animation: attacare 3s 1s backwards;
+}
+
+.section2 {
+  margin-block: 2rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.section2 img {
+  width: 20%;
+}
+
+@keyframes attacare {
+  from {
+    transform: perspective(500px) translateZ(200px);
+    opacity: 0;
+  }
+  to {
+    transform: perspective(500px) translateZ(0px);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
